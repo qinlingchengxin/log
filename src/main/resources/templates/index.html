@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>show logs</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<ul th:each="file : ${files}">
+    <li>
+        <a style="text-decoration: none" target="_blank" th:text="${file.name}" th:href="'content?path='+${file.url}"></a>
+    </li>
+</ul>
+</body>
+</html>

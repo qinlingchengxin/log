@@ -1,0 +1,9 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /log
+
+sys-log:
+  path:
+    - "/apache/apache-tomcat-7.0.52/logs/admin"
+    - "/apache/apache-tomcat-7.0.52/logs/front"
