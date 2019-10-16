@@ -6,4 +6,4 @@ server:
 sys-log:
   path:
     - "/apache/apache-tomcat-7.0.52/logs/admin"
-    - "/apache/apache-tomcat-7.0.52/logs/front"
+    - "/apache/apache-tomcat-7.0.52/logs/api"
