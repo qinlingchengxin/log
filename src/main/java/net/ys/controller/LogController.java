@@ -47,6 +47,9 @@ public class LogController {
 
     @GetMapping("content")
     public void content(HttpServletResponse response, String path) throws IOException {
+        if ("".equals(path)) {
+            return;
+        }
         File file = new File(path);
         FileInputStream inputStream = new FileInputStream(file);
         response.setCharacterEncoding("UTF-8");
